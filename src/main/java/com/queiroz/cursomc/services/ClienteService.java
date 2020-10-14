@@ -32,7 +32,7 @@ public class ClienteService {
 	private EnderecoRepository enderecoRepository ;
 
 
-	//@Transactional
+	@Transactional
 	public Cliente insert(Cliente obj) {
 		obj.setId(null);
 		obj = repo.save(obj);
